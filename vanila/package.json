@@ -1,0 +1,8 @@
+{
+  "name": "counter",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "npx http-server -y -o"
+  }
+}
