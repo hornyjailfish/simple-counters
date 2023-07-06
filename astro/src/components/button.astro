@@ -10,9 +10,9 @@ const {counter,text} = Astro.props
       const button = this.querySelector('button');
       const span = this.querySelector('p');
       button.addEventListener('click',() => {
-        counter++;
-        button.textContent = this.dataset.message +" "+ counter.toString();
-        span.textContent = counter.toString();
+          button.textContent = this.dataset.message +" "+ counter.toString();
+          span.textContent = counter.toString();
+          counter++;
       });
     }
   }

@@ -1,0 +1,11 @@
+{
+  "name": "counters",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "all": "start npm run astro | start npm run react | start npm run vanila",
+    "astro": "npm --prefix ./astro/ run astro preview",
+    "react": " npm --prefix ./react/ run build && npm --prefix ./react/ run preview",
+    "vanila": "start vanila/index.html"
+  }
+}
