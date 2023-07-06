@@ -1,0 +1,26 @@
+
+---
+const {counter,text} = Astro.props
+---
+<script>
+  class AstroCounter extends HTMLElement {
+    constructor() {
+      super();
+      let counter=0;
+      const button = this.querySelector('button');
+      const span = this.querySelector('p');
+      button.addEventListener('click',() => {
+        counter++;
+        button.textContent = this.dataset.message +" "+ counter.toString();
+        span.textContent = counter.toString();
+      });
+    }
+  }
+  customElements.define('count-button', AstroCounter);
+</script>
+
+<count-button data-message = {text}>
+  <button id='clickmedaddy'>{text} {counter}</button>
+  <p>{counter}</p>
+</count-button>
+
