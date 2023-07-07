@@ -1,0 +1,25 @@
+.App {
+  display: auto;
+  /* justify-content: center; */
+}
+h1 {
+  text-align: center;
+  font-size: 10vh;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  position: center;
+  height: 5vh;
+}
+.button {
+  margin: 0 1vw;
+  font-size: 0.8em;
+  height: inherit;
+}
+p {
+  display: inherit;
+  margin: auto 0;
+  font-size: 1em;
+}

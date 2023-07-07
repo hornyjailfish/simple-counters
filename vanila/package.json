@@ -3,6 +3,6 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "serve": "npx http-server -y -o"
+    "serve": "npx http-server -y -o -c0"
   }
 }

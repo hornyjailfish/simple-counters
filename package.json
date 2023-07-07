@@ -3,10 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "all": "start npm run astro | start npm run react | start npm run svelte | start npm run vanila ",
+    "all": "start npm run astro | start npm run react | start npm run svelte | start npm run solid | start npm run vue | start npm run vanila ",
     "astro": "npm --prefix ./astro/ run astro preview",
     "react": " npm --prefix ./react/ run build && npm --prefix ./react/ run preview",
     "svelte": " npm --prefix ./svelte/ run build && npm --prefix ./svelte/ run preview",
+    "solid": " npm --prefix ./solid/ run build && npm --prefix ./solid/ run serve",
+    "vue": " npm --prefix ./vue/ run build && npm --prefix ./vue/ run serve",
     "vanila": "npm --prefix ./vanila/ run serve"
   }
 }

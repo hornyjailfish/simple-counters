@@ -1,16 +1,24 @@
-document.addEventListener('DOMContentLoaded',load);
+document.addEventListener("DOMContentLoaded", load);
 let counter = 0;
-let button_text;
-function load(){
-  let button = document.getElementById('addone');
-  button.onclick = count;
-  button_text = button.innerText;
+const button_text = "Click me daddy! ";
 
+let button = document.createElement("button");
+button.innerText = button_text;
+button.id = "b";
+button.onclick = count;
+
+let text = document.createElement("p");
+// text.innerText = counter.toString();
+
+function load() {
+  document.body.appendChild(button);
+  document.body.appendChild(text);
 }
-function count(a) {
-  let text = document.getElementById('clickmedaddy');
-  text.innerText = ++counter;
-  let button = document.getElementById('addone');
-  button.innerText = button_text +' '+ counter.toString();
-  
+
+function count() {
+  // let text = document.getElementById("clickmedaddy");
+  let button = document.getElementById("b");
+  counter++;
+  text.innerText = counter;
+  button.innerText = button_text + " " + counter.toString();
 }
