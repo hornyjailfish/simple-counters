@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 // import devtools from 'solid-devtools/vite';
 
+process.env.BROWSER = "chrome";
 export default defineConfig({
   plugins: [
     /* 

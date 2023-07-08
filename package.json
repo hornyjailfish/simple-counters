@@ -8,7 +8,7 @@
     "react": " npm --prefix ./react/ run build && npm --prefix ./react/ run preview",
     "svelte": " npm --prefix ./svelte/ run build && npm --prefix ./svelte/ run preview",
     "solid": " npm --prefix ./solid/ run build && npm --prefix ./solid/ run serve",
-    "vue": " npm --prefix ./vue/ run build && npm --prefix ./vue/ run serve",
+    "vue": " npm --prefix ./vue/ run build && npm --prefix ./vue/ run preview",
     "vanila": "npm --prefix ./vanila/ run serve"
   }
 }
